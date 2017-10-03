@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DesBoxStyle">
+        <item name="android:textAlignment">center</item>
+        <item name="android:alpha">.9</item>
+        <item name="android:background">@color/designBackground</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/DesTxtBox</item>
+    </style>
+
+    <style name="NPSongsTxtStyle">
+        <item name="android:layout_marginTop">@dimen/NPMargin</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/buttonTxt</item>
+        <item name="android:textSize">@dimen/NPTxt</item>
+    </style>
+
+    <style name="txtViewMainMenuStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/MenuBoxHeight</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginLeft">@dimen/ButtonMargin</item>
+        <item name="android:layout_marginRight">@dimen/ButtonMargin</item>
+        <item name="android:layout_marginBottom">@dimen/ButtonMinorMargin</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:textSize">@dimen/MenuTxt</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/buttonTxt</item>
+        <item name="android:background">@color/buttonBackground</item>
+        <item name="android:text">@string/MainMenu</item>
+    </style>
+
+    <style name="PlayButtonsStyle">
+        <item name="android:background">@color/buttonBackground</item>
+        <item name="android:layout_margin">@dimen/NPMiniatureMargin</item>
+    </style>
+
+    <style name="PlaylistStyle">
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginTop">32dp</item>
+    </style>
+
+</resources>

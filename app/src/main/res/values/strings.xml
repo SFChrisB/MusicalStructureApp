@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MusicalStructureApp</string>
+    <string name="MMName">Personal Music Player</string>
+    <string name="NPName">Now Playing</string>
+    <string name="PName">Playlists</string>
+    <string name="SName">Search</string>
+    <string name="LName">Library</string>
+    <string name="MainMenu">Main Menu</string>
+    <string name="NPSongTitle">Song Title</string>
+    <string name="NPSongArtist">Song Artist</string>
+    <string name="MMDesc">The main hub of the music app. Access all the different screens from this page. Each Page links to a new Activity page, and adversally,
+        each activity links back to this first page and occasionally some of the other choices.</string>
+    <string name="NPDesc">Displays the title and artist of the currently playing song. The star icon will add a song to the favourites list, and the Playlist icon
+        will open a Spinner menu to either give the user the option to add it to a Playlist which they can also name with (EditTExt), or add it to an existing Playlist.</string>
+    <string name="PDesc">Initially empty, when the user creates playlists from songs, they will appear here. If selecting a playlist, will display a Spinner menu
+        that will offer to rename Playlist(EditText), or delete the playlist Array.remove(). If the playlist is selected, when the user clicks the Playlist button, the selected playlist will appear there.</string>
+    <string name="SDesc">Search for your favourite artists using an (EditText) which opens a new Intent activity to search various online music stores to find the
+        best fit for the search. Any favourited songs will display other songs from your library by the same artists below. </string>
+    <string name="LDesc">If a Playlist has been selected in the Playlist activity, the name and songs selected will appear, otherwise it will show all of the users
+        songs in alphabetical order. The ScrollView center box will be created using a ListView and ArrayAdapter to accommodate how big or small a collection of songs
+        the user has. To add a new song to the library, the playlist icon button will call an Intent that will link to the users music account, such as the Deezer API
+        or another user music database. To select a song to play, it will open an actionBar that will allow the user to either play the song and move to the NowPlaying
+        activity, or remove the song from the playlist using an textArray.remove() function.</string>
+    <string name="Recommendations">Recommended songs, based on songs that have been favourited by user</string>
+    <string name="PChoice1">Rock</string>
+    <string name="PChoice2">Pop</string>
+    <string name="PChoice3">Jazz</string>
+    <string name="PChoice4">Retro</string>
+    <string name="SHint">Search Artist</string>
+    <string name="LPlaylistTitle">Playlist: none</string>
+    <string name="LPlaylistSong1">Song Number one</string>
+    <string name="LPlaylistSong2">Song Number two</string>
+</resources>

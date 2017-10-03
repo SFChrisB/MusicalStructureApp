@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="DesTxtBox">10sp</dimen>
+    <dimen name="NPTxt">18sp</dimen>
+    <dimen name="NPMargin">6dp</dimen>
+    <dimen name="NPBoxHeight">100dp</dimen>
+    <dimen name="NPBoxMargin">60dp</dimen>
+    <dimen name="MenuTxt">32sp</dimen>
+    <dimen name="MenuBoxHeight">50dp</dimen>
+    <dimen name="ButtonMargin">48dp</dimen>
+    <dimen name="ButtonMinorMargin">8dp</dimen>
+    <dimen name="NPMiniatureMargin">2dp</dimen>
+    <dimen name="MMMargins">32dp</dimen>
+    <dimen name="LinMargin">8dp</dimen>
+    <dimen name="LargeMargin">32dp</dimen>
+</resources>

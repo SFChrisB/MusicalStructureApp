@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicalstructureapp.Playlist">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/musapp1"
+        android:scaleY="2"
+        android:scaleX="2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/LargeMargin"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/DesBoxStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="8dp"
+            android:text="@string/PDesc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_marginBottom="@dimen/LinMargin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:src="@drawable/note"/>
+
+            <TextView
+                style="@style/PlaylistStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/PChoice1"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:src="@drawable/note"/>
+
+            <TextView
+                style="@style/PlaylistStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/PChoice2"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:src="@drawable/note"/>
+
+            <TextView
+                style="@style/PlaylistStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/PChoice3"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:src="@drawable/note"/>
+
+            <TextView
+                style="@style/PlaylistStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/PChoice4"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/txtViewMainMenuStyle"
+            android:id="@+id/NowPlay"
+            android:text="@string/NPName"
+            android:layout_weight=".2"
+            android:layout_marginTop="@dimen/LinMargin"
+            android:layout_marginBottom="@dimen/ButtonMinorMargin" />
+
+        <TextView
+            android:id="@+id/mainMenu"
+            android:layout_weight=".2"
+            android:layout_marginTop="@dimen/ButtonMinorMargin"
+            style="@style/txtViewMainMenuStyle" />
+        </LinearLayout>
+
+</RelativeLayout>

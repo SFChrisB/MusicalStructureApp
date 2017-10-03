@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicalstructureapp.NowPlaying">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/musapp1"
+        android:scaleY="2"
+        android:scaleX="2"/>
+
+    <TextView
+        style="@style/DesBoxStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/NPDesc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/NPBoxHeight"
+            android:layout_weight="2"
+            android:layout_marginTop="@dimen/NPBoxMargin">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/note"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/NPSongsTxtStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/NPSongTitle"/>
+
+                <TextView
+                    style="@style/NPSongsTxtStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/NPSongArtist"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/NPMargin"
+                    android:src="@drawable/staruncheck"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/NPMargin"
+                    android:src="@drawable/playlist"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/MenuBoxHeight"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_margin="@dimen/ButtonMargin">
+
+            <ImageButton
+                style="@style/PlayButtonsStyle"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/prev"/>
+            <ImageButton
+                style="@style/PlayButtonsStyle"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/play"/>
+            <ImageButton
+                style="@style/PlayButtonsStyle"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/next"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mainMenu"
+            android:layout_weight=".2"
+            style="@style/txtViewMainMenuStyle" />
+
+    </LinearLayout>
+
+</RelativeLayout>

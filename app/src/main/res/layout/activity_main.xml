@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicalstructureapp.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/musapp1"
+        android:scaleY="2"
+        android:scaleX="2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/DesBoxStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:text="@string/MMDesc" />
+
+        <ImageView
+            android:id="@+id/PlayList"
+            android:src="@drawable/playlistbutton"
+            android:layout_marginLeft="@dimen/MMMargins"
+            android:layout_marginRight="@dimen/MMMargins"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:alpha=".5"
+            android:layout_marginBottom="@dimen/ButtonMinorMargin"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/Search"
+            android:src="@drawable/searchmusapp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/ButtonMinorMargin" />
+
+        <ImageView
+            android:id="@+id/NowPlay"
+            android:src="@drawable/nowplay"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/ButtonMinorMargin"
+            android:layout_marginRight="@dimen/ButtonMinorMargin"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/ButtonMinorMargin" />
+
+        <TextView
+            android:id="@+id/Library"
+            style="@style/txtViewMainMenuStyle"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/ButtonMinorMargin"
+            android:layout_marginRight="@dimen/ButtonMinorMargin"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:text="@string/LName"
+            android:layout_marginBottom="@dimen/ButtonMinorMargin" />
+
+    </LinearLayout>
+
+</RelativeLayout>
